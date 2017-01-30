@@ -16,3 +16,21 @@ rm teamspeak3-server_linux_amd64-3.0.13.6.tar.bz2
 mv teamspeak3-server_linux_amd64 teamspeak-server
 cd teamspeak-server
 ./ts3server_startscript.sh start
+
+=============================================
+
+Launch Script - If your using lightsail after you see Running Wait for about 15 Sec to connect. 
+
+
+# update package list
+yum -y update
+# Move to dir
+cd /home/ec2-user/
+# download teamspeak
+wget http://dl.4players.de/ts/releases/3.0.13.6/teamspeak3-server_linux_amd64-3.0.13.6.tar.bz2
+# extract
+tar -vxjf teamspeak3-server_linux_amd64-3.0.13.6.tar.bz2
+# Clean
+rm teamspeak3-server_linux_amd64-3.0.13.6.tar.bz2
+# move to teamspeak-server folder
+mv teamspeak3-server_linux_amd64 teamspeak-server
